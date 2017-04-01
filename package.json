@@ -1,0 +1,33 @@
+{
+  "name": "emojson",
+  "version": "1.0.0",
+  "description": "Emoji 5.0 in a node module",
+  "main": "emoJson.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abaroni/emoJson.git"
+  },
+  "keywords": [
+    "emoji",
+    "json",
+    "emoticon",
+    "emojis",
+    "emoticons",
+    "utf8",
+    "utf",
+    "unicode"
+  ],
+  "author": "Alessandro Baroni <inf.baroni@gmail.com> (https://www.linkedin.com/in/alebaroni/)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/abaroni/emoJson/issues"
+  },
+  "homepage": "https://github.com/abaroni/emoJson#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
