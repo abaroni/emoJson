@@ -9,7 +9,7 @@ Emoji 5.0 as described [here](http://unicode.org/emoji/charts/index.html) in a n
 
 ## Usage
 
-    const emojson = require('./emoJson.js');
+    const emojson = require('emojson');
 
     const toPrint = emojson.getData().map( elem => elem.emoji + '\t' + elem.description)
 
