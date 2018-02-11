@@ -9,15 +9,22 @@ describe('emoJson interface', function() {
 });
 
 describe('emoJson schema', function() {
-    emoJson.getData().forEach(function (element){
-      it('should conform to emoJson schema', function() {
+    emoJson.getData().forEach(function (element,index){
+      it(`element ${index} should conform to emoJson schema`, function() {
           expect(element).to.have.property('id');
+          expect(element.id).to.be.a('string');
           expect(element).to.have.property('generalCategory');
+          expect(element.generalCategory).to.be.a('string');
           expect(element).to.have.property('category');
+          expect(element.category).to.be.a('string');
           expect(element).to.have.property('codepoints');
+          expect(element.codepoints).to.be.an('array');
           expect(element).to.have.property('emoji');
+          expect(element.emoji).to.be.a('string');
           expect(element).to.have.property('description');
+          expect(element.description).to.be.a('string');
           expect(element).to.have.property('tags');
+          expect(element.tags).to.be.an('array');
       });
     });
 
