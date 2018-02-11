@@ -1,6 +1,6 @@
 # emoJson
 
-Emoji 5.0 as described [here](http://unicode.org/emoji/charts/index.html) in a node module
+Emoji 11.0 as described [here](http://unicode.org/emoji/charts/index.html) in a node module
 
 
 ## Installation
