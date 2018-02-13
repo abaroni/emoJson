@@ -1,6 +1,6 @@
 {
   "name": "emojson",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Emoji 11.0 in a node module",
   "main": "emoJson.js",
   "scripts": {
