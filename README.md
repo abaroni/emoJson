@@ -1,7 +1,6 @@
 # emoJson
 
-Emoji 11.0 as described [here](http://unicode.org/emoji/charts/index.html) in a node module
-
+Emoji 11.0 as described [here](http://unicode.org/emoji/charts/emoji-list.html) in a node module.
 
 ## Installation
 
@@ -15,6 +14,9 @@ Emoji 11.0 as described [here](http://unicode.org/emoji/charts/index.html) in a 
 
     toPrint.forEach(elem => console.log(elem))
 
+## How to make a pull request
+
+  Create a personal fork (usually from master), make your changes and run the test. Then submit a pull request on the development branch.✌
 
 ## Tests
 
