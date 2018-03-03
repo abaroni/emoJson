@@ -19,6 +19,7 @@ describe('emoJson schema', function() {
           expect(element.category).to.be.a('string')
           expect(element).to.have.property('codepoints')
           expect(element.codepoints).to.be.an('array')
+          element.codepoints.forEach( codepoint => expect(codepoint).to.be.a('number') )
           expect(element).to.have.property('emoji')
           expect(element.emoji).to.be.a('string')
           expect(element).to.have.property('description')
@@ -33,12 +34,7 @@ describe('emoJson schema', function() {
 describe('emoji and codepoints', function() {
     emoJson.getData().forEach(function (element,index){
       it(`element ${index} contains an emoji and a consistent array of codepoints`, function() {
-
-          const codePoints = []
-          element.codepoints.forEach(codepointStr => {
-            codePoints.push(parseInt(codepointStr.substring(2),16))
-          })
-          const emojiFromCodepoints = String.fromCodePoint.apply(null,codePoints)
+          const emojiFromCodepoints = String.fromCodePoint(...element.codepoints)
           expect(element.emoji).to.equal(emojiFromCodepoints)
       })
     })
